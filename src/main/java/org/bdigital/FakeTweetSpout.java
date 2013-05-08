@@ -49,7 +49,7 @@ public class FakeTweetSpout extends BaseRichSpout implements Serializable {
 	}
 
 	String message = MSSG[rnd.nextInt(MSSG.length)];
-	log.debug(MessageFormat.format("E {0}", message));
+	log.info(MessageFormat.format("E {0}", message));
 	collector.emit(new Values(UUID.randomUUID(), System.currentTimeMillis(), message));
 
     }

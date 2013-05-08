@@ -26,7 +26,7 @@ public class EchoConsoleBolt extends BaseBasicBolt {
     };
     
     public void execute(Tuple input, BasicOutputCollector collector) {
-	log.info(MessageFormat.format("Processing {0}.", input.getString(2)));
+	log.info(MessageFormat.format("P {0}.", input.getString(2)));
 
     }
 
